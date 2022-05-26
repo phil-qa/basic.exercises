@@ -18,3 +18,13 @@ print(f"the current list {my_list}")
 print(f"get the second item :{my_list.pop(1)}")
 print(f"The new list {my_list}")
 
+additional_list = ["pineapple", "coconut", "lemon"]
+
+#add one list to another
+print(f"initial list {my_list}")
+my_list.extend(additional_list)
+print(f"The updated list {my_list}")
+
+#iterate over a list
+for fruit in my_list:
+    print(f"a fruit is : {fruit}")
