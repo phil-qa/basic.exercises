@@ -44,3 +44,9 @@ print(f"unsorted list is {my_list}")
 print(f"sorted list is {sorted(my_list)}")
 #can you determine the sort that was used
 
+#Methods that come with lists
+print(f"is there a banana in there {'banana' in my_list}")
+print(f"Is there NO banana in there {'banana' not in my_list}")
+
+print(f"there are {len(my_list)} fruits in the list, there is "
+      f"{my_list.count('strawberry')} strawberry(s) in there and can be found at index {my_list.index('strawberry')}")
