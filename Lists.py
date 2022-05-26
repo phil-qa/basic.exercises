@@ -22,6 +22,7 @@ additional_list = ["pineapple", "coconut", "lemon"]
 
 #add one list to another to the right
 print(f"initial list {my_list}")
+
 my_list.extend(additional_list)
 print(f"The updated list {my_list}")
 
@@ -36,4 +37,10 @@ print(f"Added straberry to position 4 : {my_list}")
 #iterate over a list
 for fruit in my_list:
     print(f"a fruit is : {fruit}")
+
+#sort the list
+print(f"unsorted list is {my_list}")
+
+print(f"sorted list is {sorted(my_list)}")
+#can you determine the sort that was used
 
