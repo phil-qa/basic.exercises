@@ -7,6 +7,9 @@ class Client:
     def __str__(self):
         return f"The clients name is {self.first_name} {self.last_name} and they live in {self.city}"
 
+    def get_client(self):
+        return(f"The clients name is {self.first_name} {self.last_name} and they live in {self.city}")
+
 
 
 
@@ -23,8 +26,10 @@ with open("uk-500.csv",newline='') as csvfile:
     next(read_data)
     for row in read_data:
         # print(row[0])
-        print(', '.join(row))
+        #print(', '.join(row))
         clients.append(Client(row))
 
 print(clients[0])
+print(clients[10])
 print(clients[1].first_name)
+print(clients[5].get_client())
