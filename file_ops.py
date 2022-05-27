@@ -23,7 +23,7 @@ with open("uk-500.csv",newline='') as csvfile:
     next(read_data)
     for row in read_data:
         # print(row[0])
-        # print(', '.join(row))
+        print(', '.join(row))
         clients.append(Client(row))
 
 print(clients[0])
