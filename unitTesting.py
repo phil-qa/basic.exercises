@@ -2,8 +2,8 @@ import unittest
 
 class Calculator:
 
-    def add(self, a, b):
-        return (a+b)
+    def add(self, first_operator, second_operator):
+        return (first_operator + second_operator)
 
 
 class TestCalculator(unittest.TestCase):
