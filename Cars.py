@@ -16,3 +16,4 @@ for car in combined:
     my_file.write(car+'\n')
 
 my_file.close()
+
