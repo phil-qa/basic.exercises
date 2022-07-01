@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 cars = ["Corsa", "Mini", "Tesla"]
 makes= ["Vaxhaul", "BMW", "Tesla"]
 model=["kmi009", "haeokl", "zippy1"]

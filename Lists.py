@@ -32,7 +32,7 @@ print(f"added to the left {my_list}")
 
 # insert one somewhere
 my_list.insert(3, "strawberry")
-print(f"Added straberry to position 4 : {my_list}")
+print(f"Added strawberry to position 4 : {my_list}")
 
 # iterate over a list
 for fruit in my_list:
@@ -63,3 +63,23 @@ print(f"The squared list is {squared_list}")
 
 just_evens = [value for value in squared_list if value % 2 == 0]
 print(f"Getting the even values from the list {just_evens}")
+
+my_list = ["Cherry", "Apple"]
+my_list.append("Pear")
+my_list[0]
+my_list[-1]
+my_list.append(0)
+my_list.pop()
+
+my_list = ['tasty ' + fruit for fruit in my_list]
+my_list[0]
+
+
+users = ['Dan', 'Clive', 'Bob']
+roles = ['Driver', 'Gunner', 'Loader']
+a_thing = {}
+for k in users:
+    for v in roles:
+        a_thing[k] = v
+        users.remove(k)
+        roles.remove(v)
