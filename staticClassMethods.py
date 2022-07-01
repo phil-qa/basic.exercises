@@ -19,6 +19,6 @@ c.staticmethod_increment(c)
 
 f = MyClass
 
-print(f.)
+
 
 print(f"We love steve {c.counter} many times")
