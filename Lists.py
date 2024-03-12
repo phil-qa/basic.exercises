@@ -72,14 +72,38 @@ my_list.append(0)
 my_list.pop()
 
 my_list = ['tasty ' + fruit for fruit in my_list]
-my_list[0]
+print(my_list[0])
 
+'''
+list slicing is a way of extracting data from sequence types, 
+it relies heavily on indexing  using sequence[start:stop]  slice object slice(start, stop) can be used to define a slice'''
+print("Looking at slicing")
+colors = ['red', 'blue', 'green', 'orange']
+print(f"original list {colors}")
+print(colors[1:3])
+print("Assigning values to the slice 1:3")
+colors[1:3] = ['pink', 'grey']
+
+sl_object = slice(1,3)
+print(f"start is {sl_object.start} stop is {sl_object.stop}")
+print(type(sl_object))
+print(f"The values for the slice are {colors[sl_object]}")
+
+print(colors)
+
+#Can go over the bounds on a slice, it makes no difference
+print(colors[1:100])
+
+print(f"can go negative on the indicies in this case colors[-4:-2]{colors[-4:-2]}")
 
 users = ['Dan', 'Clive', 'Bob']
 roles = ['Driver', 'Gunner', 'Loader']
 a_thing = {}
 for k in users:
     for v in roles:
+        print(k)
         a_thing[k] = v
         users.remove(k)
         roles.remove(v)
+
+print(a_thing)

@@ -43,22 +43,21 @@ def build_printout(numbers, result, operator):
         out_string += f" {str(number)} {operator}"
     return out_string[:len(out_string) - 1] + f"= {result}"
 
+
 operator = None
-while operator !="stop":
+while operator != "stop":
     operator = input("which operator to use")
     if operator != "stop":
-        legit_entries = ['-','+','/','*']
+        legit_entries = ['-', '+', '/', '*']
         if operator in legit_entries:
             numbers = get_numbers()
-            if (operator == '+'):
+            if operator == '+':
                 print(build_printout(numbers, add(numbers), '+'))
-            elif (operator == '-'):
+            elif operator == '-':
                 print(build_printout(numbers, subtract(numbers), '-'))
-            elif (operator == '/'):
+            elif operator == '/':
                 print(build_printout((numbers, divide(numbers), '/')))
-            elif (operator == '*'):
+            elif operator == '*':
                 print(build_printout(numbers, multiply(numbers), '*'))
         else:
             print("I didnt understand the input")
-
-
